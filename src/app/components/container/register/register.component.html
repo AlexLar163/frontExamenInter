@@ -1,0 +1,54 @@
+
+<form
+  class="container card p-2"
+  action="http://localhost:3003/register"
+  enctype="application/x-www-form-urlencoded"
+  method="post"
+>
+  <div class="mb-3">
+    <label for="name" class="form-label">Nombre: </label>
+    <input type="text" class="form-control" id="name" name="name" />
+  </div>
+  <div class="mb-3">
+    <label for="url_foto" class="form-label">Url de la fotografia:</label>
+    <input
+      type="url"
+      class="form-control"
+      id="url_foto"
+      name="url_photography"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Correo Electronico: </label>
+    <input type="email" class="form-control" id="email" name="email" />
+  </div>
+  <div class="mb-3">
+    <label for="charge" class="form-label">Cargo en la empresa:</label>
+    <input type="text" class="form-control" id="charge" name="charge" />
+  </div>
+  <div class="mb-3">
+    <label for="birthday_date" class="form-label">Fecha de Nacimiento: </label>
+    <input
+      type="datetime"
+      class="form-control"
+      id="birthday_date"
+      name="birthday_date"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="sueldo" class="form-label">Sueldo:</label>
+    <input type="text" class="form-control" id="sueldo" name="sueldo" />
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password:</label>
+    <input
+      type="password"
+      class="form-control"
+      id="exampleInputPassword1"
+      name="password"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary mb-3">Submit</button>
+</form>
+
+<a href="">Ya tienes una cuenta?</a>

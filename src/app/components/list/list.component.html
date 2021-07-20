@@ -1,0 +1,21 @@
+<div class="container">
+  <table class="table table-success table-striped">
+    <thead>
+      <tr>
+        <th *ngFor="let item of arrKeys" scope="col">{{ item }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of arrValues; index as i">
+        <th scope="row">{{ item.id }}</th>
+        <td>{{ item.name }}</td>
+        <td><img [src]="item.url_photografy" alt="" class="w-75" /></td>
+        <td>{{ item.email }}</td>
+        <td>{{ item.charge }}</td>
+        <td>{{ item.birthday_date }}</td>
+        <td>{{ item.sueldo }}</td>
+        <td><app-info [data]="item"></app-info></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
